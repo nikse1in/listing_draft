@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolide Listing Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bolide Listing Menu</h1>
+        <div class="stats-link">
+            <a href="https://your-stats-page-link.com">Check our stats</a>
+        </div>
+        <div class="menu">
+            <div class="item" onclick="selectListing(this, 'Simple Listing', 69)">
+                <h2>Simple Listing - $69</h2>
+                <ul>
+                    <li>Your token is tradable on Bolide</li>
+                    <li>Post on our Twitter</li>
+                    <li>Post on Farcaster</li>
+                </ul>
+            </div>
+            <div class="item" onclick="selectListing(this, 'Airdrop Listing', 120)">
+                <h2>Airdrop Listing - $120</h2>
+                <ul>
+                    <li>Your token is tradable on Bolide</li>
+                    <li>An Airdrop of your token is hosted to all Bolide users</li>
+                    <li>Post on our Twitter</li>
+                    <li>Post on Farcaster</li>
+                    <li>App notification to EVERYONE about the Airdrop</li>
+                </ul>
+            </div>
+        </div>
+        <div class="extras">
+            <h3>Extras:</h3>
+            <div class="extra-item" onclick="selectItem(this, 'Telegram Pinned Post', 20)">
+                <span>Telegram Pinned Post - $20</span>
+            </div>
+            <div class="extra-item" onclick="selectItem(this, 'Email to all users', 40)">
+                <span>Email to all users - $40</span>
+            </div>
+            <div class="extra-item" onclick="selectItem(this, 'DeBank post', 30)">
+                <span>DeBank post - $30</span>
+            </div>
+            <div class="extra-item" onclick="selectItem(this, 'Discord Announcement', 19)">
+                <span>Discord Announcement - $19</span>
+            </div>
+        </div>
+        <div class="special">
+            <h3>SPECIAL:</h3>
+            <div class="special-item" onclick="selectItem(this, 'DM to 26k accounts', 70)">
+                <span>Send a DM to 26k accounts on DeBank - $70</span>
+            </div>
+        </div>
+        <div class="checkout">
+            <h3>Selected Items</h3>
+            <ul id="selected-items"></ul>
+            <h3>Total: $<span id="total-cost">0</span></h3>
+            <button onclick="checkout()">Check Out</button>
+            <div id="payment-info"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
